@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(rgb(49, 48, 47), white);
+}
+body {
+    position: relative;
+    
+
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    width: auto;
+    margin: 50px 50px  ;
+    padding: 30px;
+    
+    box-shadow: 0 0 10px #ebe7e7;
+    background-image: linear-gradient(#ede2e2,#c06d6d);
+    border: 1px solid inherit;
+    border-radius: 50px;
+}
+img {
+    display: block;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+section {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+.block {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    border: 7px white solid;
+    padding: 3px;
+}
+.block:hover {
+    background-color: #fca3ff;
+    cursor: pointer;
+}
+
+a{ 
+    text-decoration: none;
+    color: wheat;
+    /* display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center; */
+
+}
+.scorecard {
+    color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    border: 2px black solid;
+    box-shadow: 0 0 10px #ebe7e7;
+    
+}
+
+.infoAboutPlayers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.sc{
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+
+    color: wheat;
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info {
+     
+     position: absolute;
+     z-index: 1;
+     background-image: linear-gradient(#fff,#aaa);
+     top: 40%;
+     right: 43%;
+     border:black solid 3px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 40px;
+     height: 100px;
+     width: 200px;
+     display: none;
+     transition: 0.5s ease-in-out;
+     
+     
+}
