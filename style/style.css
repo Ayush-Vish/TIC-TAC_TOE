@@ -7,10 +7,9 @@ html {
     scroll-behavior: smooth;
     background-image: linear-gradient(rgb(49, 48, 47), white);
 }
+
 body {
     position: relative;
-    
-
     font-family: 'Playfair Display', serif;
     height: 100vh;
     width: auto;
@@ -30,17 +29,21 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content:space-between
+    justify-content:space-between;
+    flex-wrap: nowrap;
 }
 section {
+
     margin: 10px;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 .board {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-}
+    
+}   
 .block {
     height: 150px;
     width: 150px;
@@ -69,6 +72,7 @@ a{
     margin: 2rem;
     border: 2px black solid;
     box-shadow: 0 0 10px #ebe7e7;
+    flex-wrap: wrap;
     
 }
 
@@ -113,4 +117,45 @@ span {
      transition: 0.5s ease-in-out;
      
      
+}
+@media screen and (max-width : 580px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke , firebrick);
+
+
+    }
+    .board {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        margin: 0;
+        padding: 0;
+        /* border: 3px white solid; */
+    }
+    #info {
+       top: 50%;
+       right: 50%;
+    }
+    .block {
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px rgb(255, 255, 255) solid;
+
+    }
+    span {
+        font-size: 80px;
+    }
+    
+    
+
+    
+}
+#logo {
+    position: relative;
+    transition:  0.5s ease;
 }
